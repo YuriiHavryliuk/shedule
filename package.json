@@ -1,0 +1,31 @@
+{
+  "name": "shedule",
+  "version": "1.0.0",
+  "description": "Shedule template",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuriiHavryliuk/shedule.git"
+  },
+  "author": "Havriliuk Yurii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuriiHavryliuk/shedule/issues"
+  },
+  "homepage": "https://github.com/YuriiHavryliuk/shedule#readme"
+}
