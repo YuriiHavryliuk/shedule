@@ -1,0 +1,13 @@
+.section-state-2{
+	
+	& .calendar{
+
+		&__subtitle{
+			flex: 20% !important;
+		}
+
+		&__day-group{
+			flex: 80% !important;
+		}
+		}
+	}

@@ -1,9 +1,18 @@
 @import '_normalize'; 
-@import '_variables';
+@import '_variables'; 
+
+//common style
+@import '_common';
 
 
 // Your styles:
-@import 'sections/_shedule';
+@import 'sections/_state-0';
+@import 'sections/_state-0-1';
+@import 'sections/_state-1';
+@import 'sections/_state-2';
+@import 'sections/_state-3';
+@import 'sections/_state-4';
+@import 'sections/_state-5';
 
 @import "sections/breakpoints/xl";
 @import "sections/breakpoints/lg";

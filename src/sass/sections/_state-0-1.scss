@@ -1,0 +1,16 @@
+.section{
+	&__btn{
+		&--non-border{
+			color: black;
+			text-decoration: underline;
+		}
+	}
+}
+
+	.section__arrow:before{
+		content: "\f063";
+		font-family: FontAwesome;
+	    display: inline-block;
+	    padding-left: 10px;
+
+			}
