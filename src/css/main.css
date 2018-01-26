@@ -624,7 +624,7 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .calendar .js-acc-show {
+  .calendar .js-acc.active + .calendar__day-group {
     opacity: 1;
     height: auto;
   }

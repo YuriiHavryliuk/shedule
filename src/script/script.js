@@ -1,13 +1,17 @@
 //accordeon
+"use strict";
+var accTitle = document.getElementsByClassName('js-acc');
 
-var acc = document.getElementsByClassName('js-acc');
-var i;
-
-for (i = 0; i < acc.length; i++){
-	acc[i].onclick = function(){
-		this.classList.toggle("js-acc-active");
-		this.nextElementSibling.classList.toggle("js-acc-show");
+for (var i = 0; i < accTitle.length; i++){
+	accTitle[i].addEventListener('click', function(){
+		if(!(this).classList.contains('active')){
+			for (var i = 0; i < accTitle.length; i++){
+				accTitle[i].classList.remove('active');
+			}
+			this.classList.add('active');
 	}
+	})
+	
 }
 
 
