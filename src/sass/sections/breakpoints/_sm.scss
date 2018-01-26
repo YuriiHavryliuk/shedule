@@ -1,8 +1,70 @@
+@media (min-width: 500px) and(max-width: 767px){
+	.section__buttons{
+		width: 60%;
+	}
+}
 
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px) {
+// Small devices
+@media (max-width: 767px) {
     .container{
-        width: 540px;
+        min-width: 320px;
+        width: 90%;
+    }
+
+    .section{
+    	padding: 10px;
+
+    	&__title{
+			margin-bottom: 50px;
+    	}
+
+		&__subtitle{
+    		display: none;
+    }
+    	&__buttons{
+    		flex-flow: column;
+    		margin: 0 auto;
+    	}
+
+    }
+
+    .calendar{
+
+    	&__head{
+    		display: none;
+    }
+    	&__day{
+    		flex-flow: column;
+    	}
+
+    	&__item{
+    		flex-flow: column;
+    		margin-top: 20px;
+    	}
+    	&__day-group{
+    		margin-left: 60%;
+    	}
+    	&__subtitle{
+    		padding-right: 20px;
+    		font-size: 18px;
+    		line-height: 24px;
+    		
+    		&:after{
+    			content: "\f106";
+    			float: right;
+    			font-size: 24px;
+    			font-family: FontAwesome;
+    		}
+
+    		&:hover{
+    			cursor: pointer;
+    		}
+    	}
+
+    	&__subitem{
+    		font-size: 14px;
+    		color: $color-brownish-grey;
+    		padding-bottom: 5px;
+    	}
     }
 }
