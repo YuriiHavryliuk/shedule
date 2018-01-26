@@ -11,7 +11,19 @@ for (var i = 0; i < accTitle.length; i++){
 			this.classList.add('active');
 	}
 	})
-	
+
 }
+
+//Drag & Drop
+  	$( function() {
+		$( ".calendar__day-group" ).sortable({
+			revert: 1
+		});
+		$( ".calendar__item" ).draggable({
+			connectToSortable: ".calendar__day-group",
+			helper: "original",
+			revert: "invalid"
+		});
+	} );
 
 
