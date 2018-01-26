@@ -42,14 +42,15 @@
     		flex-flow: column;
     		margin-top: 20px;
     	}
+
     	&__day-group{
     		margin-left: 60%;
 			transition: opacity 1s ease-out;
-			opacity: 0; 
-			height: 0;
-			overflow: hidden;
+				opacity: 0; 
+				height: 0;
+				overflow: hidden;
     	}
-    	& .js-acc-show{
+    	& .js-acc.active + .calendar__day-group{
 			opacity: 1;
 			height: auto;
     	}
