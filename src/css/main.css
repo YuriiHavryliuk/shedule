@@ -618,6 +618,15 @@ body {
   }
   .calendar__day-group {
     margin-left: 60%;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .calendar .js-acc-show {
+    opacity: 1;
+    height: auto;
   }
   .calendar__subtitle {
     padding-right: 20px;
@@ -632,6 +641,12 @@ body {
   }
   .calendar__subtitle:hover {
     cursor: pointer;
+  }
+  .calendar .js-acc-active:after {
+    content: "\f107";
+    float: right;
+    font-size: 24px;
+    font-family: FontAwesome;
   }
   .calendar__subitem {
     font-size: 14px;
