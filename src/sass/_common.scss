@@ -7,6 +7,7 @@ body{
 }
 
 .section{
+	padding: 50px 0 0 0;
 	min-width: 320px;
 
 	&__title{
@@ -25,7 +26,6 @@ body{
 		text-align: center;
 		display: flex;
     	justify-content: center;
-		margin-top: 45px;
 		font-size: 14px;
 	}
 
@@ -34,6 +34,12 @@ body{
 		padding: 10px 15px;
 		border-radius: 5px;
 		margin: 10px;
+
+		&:hover{
+			opacity: 0.8;
+			transition: all 0.3s ease-out;
+			transform: scale(1.05);
+		}
 
 		&--primary{
 			background-color: $color-brownish-grey;
@@ -67,8 +73,9 @@ body{
 		flex: 25%;
 		font-size: 20px;
 		color: $color-black-secondary;
-		font-weight: bold;
+		font-weight: 500;
 		line-height: 32px;
+		margin-top: 0;
 	}
 
 	&__item{
@@ -85,7 +92,8 @@ body{
 		flex: 25;
 		font-size: 24px;
 		color: $color-black-primary;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
+		font-weight: 500;
 	}
 
 	&__subitem{
@@ -94,6 +102,7 @@ body{
 		padding-bottom: 10px;
 		font-size: 16px;
 		line-height: 24px;
+		margin-top: 5px;
 	}
 
 }

@@ -4,5 +4,17 @@
     .container{
         width: 1140px;
     }
+
+    .section{
+    	&-state-1{
+			.container{
+        		width: 900px;
+    }
+    	}
+
+    	&__subtitle{
+    		width: 90%;
+    	}
+    }
 }
 

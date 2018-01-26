@@ -4,4 +4,16 @@
     .container{
         width: 960px;
     }
+
+    .section{
+    	&-state-1{
+			.container{
+        		width: 800px;
+    }
+    	}
+
+    	&__subtitle{
+    		width: 100%;
+    	}
+    }
 }
