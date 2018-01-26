@@ -33,6 +33,7 @@
     	&__head{
     		display: none;
     }
+
     	&__day{
     		flex-flow: column;
     	}
@@ -43,7 +44,16 @@
     	}
     	&__day-group{
     		margin-left: 60%;
+			transition: opacity 1s ease-out;
+			opacity: 0; 
+			height: 0;
+			overflow: hidden;
     	}
+    	& .js-acc-show{
+			opacity: 1;
+			height: auto;
+    	}
+
     	&__subtitle{
     		padding-right: 20px;
     		font-size: 18px;
@@ -58,6 +68,16 @@
 
     		&:hover{
     			cursor: pointer;
+    		}
+    	}
+
+    	& .js-acc-active{
+			
+			&:after{
+    			content: "\f107";
+    			float: right;
+    			font-size: 24px;
+    			font-family: FontAwesome;
     		}
     	}
 
