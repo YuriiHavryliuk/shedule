@@ -1,0 +1,65 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	transform: translateX(-150%); 
+	transition: all .5s;
+	z-index: 99;
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+
+	&__form{
+		background: linear-gradient(to bottom, rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%);
+		left: 50%;
+		min-width: 250px;
+		max-width: 600px;
+		padding: 50px 100px;
+		transform: translateX(-50%);
+		display: flex;
+		text-align: center;
+		top: 20%;
+		position: absolute;
+		flex-flow: column;
+	}
+
+	&__input{
+		margin-bottom: 10px;
+		padding: 10px 5px;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+	}
+
+	&__btn{
+		border-radius: 5px;
+		padding: 5px 15px;
+		border: none;
+		outline: none;
+
+		&--close{
+			right: 0;
+            top: 0;
+            font-size: 24px;
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+
+	&__select{
+		border-radius: 5px;
+		padding: 8px 15px 8px 0px;
+		border: none;
+		outline: none;
+		margin-bottom: 10px;
+	}
+	&__message{
+		color: red;
+		height: 20px;
+	}
+}
+
+.modal-open .modal {
+	transform: translateX(0);
+	display: block;
+}

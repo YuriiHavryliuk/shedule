@@ -38,7 +38,7 @@ gulp.task('css-main', ['sass'], function() {
 	return gulp.src('src/css/main.css') 
 		.pipe(cssnano())
 		.pipe(rename({suffix: '.min'})) 
-		.pipe(gulp.dest('src/css')); 
+		.pipe(gulp.dest('docs/css')); 
 });
 
 gulp.task('watch', ['browser-sync','nunjucks', 'sass'], function() {
@@ -61,16 +61,16 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'nunjucks'], function() {
 
 	var buildCss = gulp.src([ 
-		'src/css/main.min.css'])
+		'src/css/main.css'])
 	.pipe(gulp.dest('docs/css'))
 
-	var buildFonts = gulp.src('src/fonts/**/*')
+	var buildFonts = gulp.src('src/font/**/*')
 	.pipe(gulp.dest('docs/fonts'))
 
 	var buildJs = gulp.src('src/script/**/*') 
 	.pipe(gulp.dest('docs/script'))
 
-	var buildHtml = gulp.src('docs/*.html') 
+	var buildHtml = gulp.src('src/*.html') 
 	.pipe(gulp.dest('docs'));
 
 });
